@@ -16,8 +16,8 @@ class LoginViewController: UIViewController {
         super.viewWillAppear(animated)
         
         [emailLoginButton, googleLoginButton, appleLoginButton].forEach{
-            $0?.layer.borderWidth = 1
-            $0?.layer.borderColor = UIColor.white.cgColor
+            $0?.layer.borderWidth = 0.5
+            $0?.layer.borderColor = UIColor.black.cgColor
             $0?.layer.cornerRadius = 30
         }
         //Navigation Bar 숨기기

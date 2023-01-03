@@ -59,7 +59,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPU-YY-Cm6">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="l2J-8a-Udk"/>
+                                            <constraint firstAttribute="height" constant="60" id="FTs-yZ-7OZ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -71,7 +71,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bat-UF-jXO">
                                         <rect key="frame" x="0.0" y="60" width="333" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="Pz1-V0-qdr"/>
+                                            <constraint firstAttribute="height" constant="60" id="Vf1-dU-cSk"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -80,7 +80,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fn6-86-2OE">
                                         <rect key="frame" x="0.0" y="120" width="333" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="Gu8-LT-EZf"/>
+                                            <constraint firstAttribute="height" constant="60" id="8QI-Go-mgp"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -171,6 +171,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="다음으로">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="fnj-CX-EhW" eventType="touchUpInside" id="hHC-sX-nGa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="My9-aK-55l"/>
@@ -196,10 +199,10 @@
             </objects>
             <point key="canvasLocation" x="818" y="93"/>
         </scene>
-        <!--Main View Controller-->
+        <!--MainViewController-->
         <scene sceneID="E96-f2-F97">
             <objects>
-                <viewController id="Ob0-jr-1cF" customClass="MainViewController" customModule="LoginSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" title="MainViewController" id="Ob0-jr-1cF" customClass="MainViewController" customModule="LoginSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rfM-ID-dec">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,9 +229,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ntS-x2-aLr" firstAttribute="centerY" secondItem="oZ3-ec-Z2G" secondAttribute="centerY" id="Nhj-BN-yyx"/>
-                            <constraint firstItem="BCw-jH-usF" firstAttribute="centerX" secondItem="oZ3-ec-Z2G" secondAttribute="centerX" id="Ns1-va-ET6"/>
+                            <constraint firstItem="BCw-jH-usF" firstAttribute="top" secondItem="ntS-x2-aLr" secondAttribute="bottom" constant="20" id="a6H-2N-fpp"/>
                             <constraint firstItem="ntS-x2-aLr" firstAttribute="centerX" secondItem="oZ3-ec-Z2G" secondAttribute="centerX" id="mwE-QZ-P0a"/>
-                            <constraint firstItem="BCw-jH-usF" firstAttribute="top" secondItem="ntS-x2-aLr" secondAttribute="bottom" constant="20" id="nid-id-1JN"/>
+                            <constraint firstItem="BCw-jH-usF" firstAttribute="centerX" secondItem="oZ3-ec-Z2G" secondAttribute="centerX" id="y60-hw-Ppm"/>
                         </constraints>
                     </view>
                     <connections>
