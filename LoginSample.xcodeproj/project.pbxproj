@@ -17,6 +17,7 @@
 		6B5B66A6296085780023B669 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5B66A5296085780023B669 /* EnterEmailViewController.swift */; };
 		6B5B66A829608C310023B669 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5B66A729608C310023B669 /* MainViewController.swift */; };
 		6B5B66AA2962BEF80023B669 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B5B66A92962BEF80023B669 /* GoogleService-Info.plist */; };
+		6B5B66AF2963CFD00023B669 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5B66AE2963CFD00023B669 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		6B5B66A5296085780023B669 /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
 		6B5B66A729608C310023B669 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6B5B66A92962BEF80023B669 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6B5B66AE2963CFD00023B669 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9FEB0EC2C601B27179801775 /* Pods-LoginSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginSample.debug.xcconfig"; path = "Target Support Files/Pods-LoginSample/Pods-LoginSample.debug.xcconfig"; sourceTree = "<group>"; };
 		ED1F1FBA67DD28E3A82AB6CA /* Pods-LoginSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginSample.release.xcconfig"; path = "Target Support Files/Pods-LoginSample/Pods-LoginSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 				6B5B668F2960760A0023B669 /* AppDelegate.swift */,
 				6B5B66912960760A0023B669 /* SceneDelegate.swift */,
 				6B5B66952960760A0023B669 /* Main.storyboard */,
+				6B5B66AE2963CFD00023B669 /* SignUpViewController.swift */,
 				6B5B66A5296085780023B669 /* EnterEmailViewController.swift */,
 				6B5B66A729608C310023B669 /* MainViewController.swift */,
 				6B5B66A3296081960023B669 /* LoginViewController.swift */,
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B5B66AF2963CFD00023B669 /* SignUpViewController.swift in Sources */,
 				6B5B66A4296081960023B669 /* LoginViewController.swift in Sources */,
 				6B5B66902960760A0023B669 /* AppDelegate.swift in Sources */,
 				6B5B66A6296085780023B669 /* EnterEmailViewController.swift in Sources */,

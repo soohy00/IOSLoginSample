@@ -13,10 +13,14 @@ class EnterEmailViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorMessageLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var SignUpButton: UIButton!
+    
+    let mystoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        SignUpButton.layer.cornerRadius = 30
         nextButton.layer.cornerRadius = 30
        
         
@@ -24,6 +28,12 @@ class EnterEmailViewController: UIViewController {
         passwordTextField.delegate = self
         
         emailTextField.becomeFirstResponder()
+        
+        
+    }
+    @IBAction func SignUpButtonTapped(_ sender: Any){
+        let SignUpViewController = self.mystoryboard.instantiateViewController(withIdentifier: "SignUpViewController")
+        self.show(SignUpViewController, sender: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,6 +42,7 @@ class EnterEmailViewController: UIViewController {
         //Navigation Bar 보이기
         navigationController?.navigationBar.isHidden = false
     }
+
     
     @IBAction func nextButtonTapped(_ sender:UIButton){
         //Firebase 이메일/비밀번호 인증
@@ -39,7 +50,7 @@ class EnterEmailViewController: UIViewController {
         let password = passwordTextField.text ?? ""
         
         //신규 사용자 생성
-        Auth.auth().createUser(withEmail: email, password: password) {
+        Auth.auth().signIn(withEmail: email, password: password) {
             [weak self] authResult, error in guard let self = self else { return }
             
             if let error = error {
@@ -60,8 +71,7 @@ class EnterEmailViewController: UIViewController {
     }
     
     private func showMainViewController() {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let mainViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController")
+        let mainViewController = mystoryboard.instantiateViewController(withIdentifier: "MainViewController")
         mainViewController.modalPresentationStyle = .fullScreen
         navigationController?.show(mainViewController, sender: nil)
     }

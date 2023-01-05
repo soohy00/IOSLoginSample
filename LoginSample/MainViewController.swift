@@ -7,9 +7,13 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 
 class MainViewController: UIViewController{
     @IBOutlet weak var welcomeLabel: UILabel!
+    
+    let db = Firestore.firestore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,11 +25,11 @@ class MainViewController: UIViewController{
         
         navigationController?.navigationBar.isHidden = true
         
-        let email = Auth.auth().currentUser?.email ?? "고객"
+        let id = Auth.auth().currentUser?.email ?? "고객님"
         
         welcomeLabel.text = """
         환영합니다.
-        \(email)님
+        \(id)님
         """
     }
     
